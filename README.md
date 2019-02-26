@@ -92,7 +92,8 @@ Figure3 shows a running example of the above steps.
 <img src="data/imgs/running_example.png"/>
 <br>
 figure3. a running example
-<center>
+</center>
+
 #### 4.Tuple Refinement
 
  Corefence are detected.
