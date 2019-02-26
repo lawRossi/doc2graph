@@ -1,0 +1,8 @@
+pycorenlp
+requests
+networkx
+spacy
+pyspotlight
+neo4j
+python_cypher
+sparqlwrapper
