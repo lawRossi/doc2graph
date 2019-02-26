@@ -11,7 +11,7 @@ The knowledge built from the following text is illustrated in figure1.
 Beethoven was born in Bonn, the capital of the Electorate of Cologne and part of the Holy Roman Empire.At the age of 21 he moved to Vienna, where he began studying composition with Joseph Haydn.
 
 <center>
-![](data/imgs/graph_full.png)
+<img src="data/imgs/graph_full.png">
 <br>
 figure1. knowledge graph example.
 </center>
