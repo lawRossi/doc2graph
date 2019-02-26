@@ -10,11 +10,12 @@ The knowledge built from the following text is illustrated in figure1.
 
 Beethoven was born in Bonn, the capital of the Electorate of Cologne and part of the Holy Roman Empire.At the age of 21 he moved to Vienna, where he began studying composition with Joseph Haydn.
 
-<center>
+
+<div align="center">
 <img src="data/imgs/graph_full.png">
 <br>
 figure1. knowledge graph example.
-</center>
+</div>
 
 ### Characteristics of the built knolwedge graph
 - predicate-centric representation
@@ -49,11 +50,11 @@ figure1. knowledge graph example.
 
 The procedure of the knowledge graph building is illustrated in figure2.
 
-<center>
+<div align="center">
 <img src="data/imgs/pipeline1.png" width="250px"/>
 <br>
 figure2. The procedure of knolwedge graph building
-</center>
+</div>
 
 #### 1.Syntax Parsing
 
@@ -88,11 +89,11 @@ figure2. The procedure of knolwedge graph building
 
 Figure3 shows a running example of the above steps.
 
-<center>
+<div align="center">
 <img src="data/imgs/running_example.png"/>
 <br>
 figure3. a running example
-</center>
+</div>
 
 #### 4.Tuple Refinement
 
