@@ -74,7 +74,7 @@ figure2. The procedure of knolwedge graph building
 | SV | Beethoven moved. |Beethoven; moved; |
 |SVP | Beethoven was a composer. |Beethoven; be; a composer|
 |SVO | Beethoven began studying composition.|Beethoven; began studying; composition|
-|SVOO| Beethoven played him a piece of music.|Beethoven; play; a piece of music; <br>Bethoven; play; him|
+|SVOO| Beethoven played him a piece of music.|Beethoven; play; a piece of music <br>Bethoven; play; him|
 |SVC |  Beethoven died yough.| Beethoven; died;|
 
  Clauses with adverbials:
@@ -86,6 +86,13 @@ figure2. The procedure of knolwedge graph building
 |SVOA|Beethoven began studying composition with Joseph Haydn.|Beethoven; began studying; composition <br>Beethoven; began studying; with Joseph Haydn|
 |SVOOA|Beethoven Beethoven played him a piece of music in 1796.|Beethoven; play; a piece of music <br> Beethoven; play; him <br>Beethoven; play; in 1796|
 
+Figure3 shows a running example of the above steps.
+
+<center>
+<img src="data/imgs/running_example.png"/>
+<br>
+figure3. a running example
+<center>
 #### 4.Tuple Refinement
 
  Corefence are detected.
@@ -96,7 +103,7 @@ figure2. The procedure of knolwedge graph building
 
 #### 6.Entity Linking
 
- Noun phrases are linked to Dbpedia so that they are canonicalized.
+ Noun phrases are linked to the corresponding entities in Dbpedia so that they are canonicalized.
 
 ### sentence simplification
 
