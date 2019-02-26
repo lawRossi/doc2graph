@@ -109,7 +109,20 @@ figure3. a running example
 
 ### sentence simplification
 
-to be continued
+The above approach of tuple extraction depends on dependency parsing. The main drawback is that most dependency parser don't achieve high accuracy. This has large impact on the extraction of tuples. Thus we need to mitigate the impact of the parsing error. Based on the observation that complex sentences are more difficult to be parsed correctly, we proposed to do sentence decomposition before tuple extraction.
+
+Rules for sentence decompostion.
+
+|special clause|example|
+|----|-------|
+|appositive| His brother, an doctor, is famous. -> "His brother is an doctor" "His brother is famous"|
+|participial phrases|The boy killed by the man was found. -> "The boy be killed by the man" "The boy was found" <br> The man went in the room, waving his arms. -> "The man went in the room" "The man wave his arms."|
+|adjective and adverb phrases|Aware of the danger, he was careful. -> "He be aware of the danger" "he was careful"|
+|leading noun phrases|A crucial figure in classical music, Beethoven remains one of the most recognised composers. -> "Beethoven be a crucial figure in classical music" "Beethoven remains one of the most recognised composers"|
+|adverb clause|When he was a child, his family was poor. -> "When he was a child." "his family was poor"|
+|adjective clause|The boy who was a thief was arrested. -> "The boy was a thief" "The boy was arrested"|
+
+These sepecial clauses are detected according to the parsing result of the sentence.
 
 ### collistion resolution
 
