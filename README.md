@@ -12,7 +12,7 @@ Beethoven was born in Bonn, the capital of the Electorate of Cologne and part of
 
 
 <div align="center">
-<img src="data/imgs/graph_full.png">
+<img src="data/imgs/graph_full.png" width="80%">
 <br>
 figure1. knowledge graph example.
 </div>
@@ -90,7 +90,7 @@ figure2. The procedure of knolwedge graph building
 Figure3 shows a running example of the above steps.
 
 <div align="center">
-<img src="data/imgs/running_example.png"/>
+<img src="data/imgs/running_example.png" width="75%"/>
 <br>
 figure3. a running example
 </div>
