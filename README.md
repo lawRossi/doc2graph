@@ -122,7 +122,49 @@ Rules for sentence decompostion.
 |adverb clause|When he was a child, his family was poor. -> "When he was a child." "his family was poor"|
 |adjective clause|The boy who was a thief was arrested. -> "The boy was a thief" "The boy was arrested"|
 
-These sepecial clauses are detected according to the parsing result of the sentence.
+These sepecial clauses are detected according to the parsing result of the sentence. Therefore, this process also depends on the dependency parser. To reduce the impact of dependency error on the decomposition process, we proposed to perform lexical simplification before sentence decomposition. The main idas is that removing words that act as modifiers would not change the syntactic structure of the original sentence, while this may help the parser to parse the sentence correctly. The remaining of this section illustrates this idea through an example.<br>
+
+original sentence: <br>
+
+Although Jordan abruptly retired from basketball before <b>the beginning of the 1993–94 NBA season</b>, and started <b>a new career in Minor League Baseball</b>, he returned to the Bulls in March 1995 and led them to <b>three additional championships</b> in 1996, 1997, and 1998, and <b>a then-record 72 regularseason wins in the 1995–96 NBA season<b>.
+
+the parsing result of the original sentence:
+<div align="center">
+  <img src="data/imgs/parsing_result_original.png" width="80%"/>
+</div>
+
+the sentence after replacing noun phrases with head words and removing noun-modifier of nouns:<br>
+
+Although Jordan abruptly retired from basketball <b>before the beginning</b>, and started a career, he returned to the Bulls <b>in March 1995</b> and led them to championships <b>in 1996 , 1997 , and 1998</b> , and a wins .
+
+the sentence after removing extra noun-modifier of verbs: <br>
+Although Jordan abruptly retired from basketball, and started a career, he returned to the Bulls and led them to championships, as well as a wins .
+
+the parsing result of the simplified sentence:
+
+<div align="center">
+  <img src="data/imgs/parsing_result_original.png" width="80%"/>
+</div>
+
+decomposition of the simplified sentence:
+- Although Jordan abruptly retired from basketball
+- Jordan started a career
+- he returned to the Bulls
+- he led them to championships, as well as a wins .
+
+decompoistion after reconstruction:
+- Although Jordan abruptly retired from basketball before the beginning of the 1993–94 NBA season.
+- Jordan started a new career in Minor League Baseball
+- he returned to the Bulls in March 1995
+- he led them to three additional championships in 1996, 1997, and 1998, and a then-record 72 regularseason wins in the 1995–96 NBA season.
+
+### The pipeline with sentence decomposition:
+
+<div align="center">
+  <img src="data/imgs/pipeline2.png" width="250px"/>
+  <br>
+  figure: the pipeline with sentence decomposition
+</div>
 
 ### collistion resolution
 
