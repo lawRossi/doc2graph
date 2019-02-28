@@ -58,7 +58,7 @@ figure2. The procedure of knolwedge graph building
 
 #### 1.Syntax Parsing
 
- Parsing the sentences with dependency parser.
+ Parsing the sentences with a dependency parser.
 
 #### 2. Phrase Chunking
 
@@ -97,7 +97,7 @@ figure3. a running example
 
 #### 4.Tuple Refinement
 
- Corefence are detected.
+ Corefence are detected. Predicate words are refined.
 
 #### 5.Constructing Graph
 
