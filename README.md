@@ -126,7 +126,7 @@ These sepecial clauses are detected according to the parsing result of the sente
 
 original sentence: <br>
 
-Although Jordan abruptly retired from basketball before <b>the beginning of the 1993–94 NBA season</b>, and started <b>a new career in Minor League Baseball</b>, he returned to the Bulls in March 1995 and led them to <b>three additional championships</b> in 1996, 1997, and 1998, and <b>a then-record 72 regularseason wins in the 1995–96 NBA season<b>.
+Although Jordan abruptly retired from basketball before <b>the beginning of the 1993–94 NBA season</b>, and started <b>a new career in Minor League Baseball</b>, he returned to the Bulls in March 1995 and led them to <b>three additional championships</b> in 1996, 1997, and 1998, and <b>a then-record 72 regularseason wins in the 1995–96 NBA season</b>.
 
 the parsing result of the original sentence:
 <div align="center">
