@@ -195,7 +195,7 @@ In order to resolve the collision among the extracted tuples, some tuples need t
 |raw+decomposition+refined|0.346|0.487|0.404|
 
 ### Presentation
-The built knolwede graph from the example document is shown in figure 4. ( The graph is stored and visuallized by Neo4j )
+The knolwede graph built from the example document is shown in figure 4. ( The graph is stored and visuallized by Neo4j )
 
 <div align="center">
 <img src="data/imgs/final_graph.png" width="80%"/>
