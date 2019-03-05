@@ -166,6 +166,39 @@ decompoistion after reconstruction:
   figure: the pipeline with sentence decomposition
 </div>
 
-### collistion resolution
+### collision resolution
+Note that tuples are extracted from both the original sentences and decomposed sentences. In this way, recall is
+boosted. However, the extracted tuples may cause collision. In order to improve the precison of tuple extraction,
+we need to resolve the collision among tuples.
 
-to be continued
+Example:<br>
+<code>
+Jordan's individual accolades include fourteen NBA All - Star Game selections.
+<br>(Jordan's individual accolades, include, fourteen NBA All)
+<br>(Jordan's individual accolades, include, fourteen NBA All - Star Game selections)
+</code>
+
+We can see that two tuples are extracted from the sentence. These tuples cause collision because "fourteen NBA All"
+and "fourteen NBA All - Star Game selections" are overlaped.
+
+In order to resolve the collision among the extracted tuples, some tuples need to be removed so that there are no overlaped phrases. We try to remove tuples with a greedy strategy. In detail, for each pair of overlaped phrases, their corresponding nodes in the built knolwedge graph are connected with an edge with label "collision"; then a subgraph contains all nodes connected with at least one "collision" edge are extracted and only "collision" edges in the subgraph are kept; finally maximum independent set is found and only thoses nodes in the subgraph that are not in this set are removed from the knowedge graph (and the corresponding tuple are also removed).
+
+## Result and Presentation
+
+### result
+
+|method|recall|precision|f1|
+|------|------|---------|--|
+|raw|0.267|0.488|0.345|
+|decomposition|0.321|0.506|0.393|
+|raw+decomposition|0.377|0.381|0.379|
+|raw+decomposition+refined|0.346|0.487|0.404|
+
+### Presentation
+The built knolwede graph from the example document is shown in figure 4. ( The graph is stored and visuallized by Neo4j )
+
+<div align="center">
+<img src="data/imgs/final_graph.png" width="80%"/>
+<br>
+figure 4: the final knowledge graph
+</div>
