@@ -197,6 +197,8 @@ In order to resolve the collision among the extracted tuples, some tuples need t
 ### Presentation
 The knolwede graph built from the example document is shown in figure 4. ( The graph is stored and visuallized by Neo4j )
 
+<span>document: Beethoven was born in Bonn, the capital of the Electorate of Cologne and part of the Holy Roman Empire.At the age of 21 he moved to Vienna, where he began studying composition with Joseph Haydn.</span>
+
 <div align="center">
 <img src="data/imgs/final_graph.png" width="80%"/>
 <br>
