@@ -189,10 +189,10 @@ In order to resolve the collision among the extracted tuples, some tuples need t
 
 |method|recall|precision|f1|
 |------|------|---------|--|
-|raw|0.267|0.488|0.345|
-|decomposition|0.321|0.506|0.393|
-|raw+decomposition|0.377|0.381|0.379|
-|raw+decomposition+refined|0.346|0.487|0.404|
+|raw|0.288|0.492|0.363|
+|decomposition|0.351|0.519|0.419|
+|raw+decomposition|0.414|0.391|0.402|
+|raw+decomposition+refined|0.379|0.500|0.431|
 
 ### Presentation
 The knolwede graph built from the example document is shown in figure 4. ( The graph is stored and visuallized by Neo4j )
