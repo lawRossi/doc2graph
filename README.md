@@ -1,4 +1,4 @@
-# Building predicate-centric context-rich knolwedge graphs from raw text documents
+# Building predicate-centric knolwedge graphs from raw text documents
 
 ## Introduction
 
