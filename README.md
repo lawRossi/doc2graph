@@ -3,7 +3,7 @@
 ## Introduction
 
 ### Motivation
-Knolwdge graphs have drawn much attentions in recentyears. Knolwedge graphs have been applied widely. At the present, there're some public knolwedge graphs, such as wikidata and DBpedia. Both of them are built based on wikipedia. Knolwedges such as entity attributes and entity relations are extracted from semi-structured information, such as inforbox. Though these knowledge grahs are large, a lot of information recorded in wikipedia is missing due to the limitation of semi-structured information in wikipedia. To tackle with this issue, we need to extract useful information from raw text documents in wikipedia. Thus, there's no doubt that it's very important to develop the technology to extract information from raw text.
+Knolwdge graphs have drawn much attentions in recentyears and have been applied widely. At the present, there're some public knolwedge graphs, such as wikidata and DBpedia. Both of them are built based on wikipedia. Knolwedges such as entity attributes and entity relations are extracted from semi-structured information, such as inforbox. Though these knowledge grahs are large, a lot of information recorded in wikipedia is missing due to the limitation of semi-structured information in wikipedia. To tackle with this issue, we need to extract useful information from raw text documents in wikipedia. Thus, there's no doubt that it's very important to develop the technology to extract information from raw text.
 
 ### Example
 The knowledge built from the following text is illustrated in figure1.
